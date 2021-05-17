@@ -1,8 +1,7 @@
 <!--
- * @Author: your name
+ * @Author: Bill
  * @Date: 2021-05-16 17:27:15
- * @LastEditTime: 2021-05-17 11:04:03
- * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2021-05-17 15:00:19
  * @Description: 俄罗斯方块
  * 1、创建一个宽为200px，高为360px的块元素
  * 2、在该容器上创建一个20 * 20的块元素
@@ -197,7 +196,7 @@
       // 定位块元素的位置
       locationBlocks()
       // 自动下落
-      // autoDown()
+      autoDown()
     }
     // 根据数据源定位的块元素的位置
     function locationBlocks() {
@@ -381,7 +380,7 @@
       // 2.删除该行中所有块元素的数据源
       for (let i = 0; i < COL_COUNT; i++) {
         // 删除所有块元素
-        console.log(fixedBlocks['17_' + i])
+        // console.log(fixedBlocks['17_' + i])
         document.getElementById("container").removeChild(fixedBlocks[`${line}_${i}`])
         // 删除该行中所有块元素的数据源
         fixedBlocks[`${line}_${i}`] = null
